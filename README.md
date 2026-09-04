@@ -22,17 +22,17 @@ Compatible with exports from Otter.ai, Fireflies, Gong, Fathom, tl;dv, and any t
 
 ## Installation
 
-**Option 1 — Install the .skill file directly**
-
 1. Download `sales-call-intelligence.skill` from this repo
-2. Open Claude Code
-3. Run `/install-skill` and select the downloaded file
+2. Unzip it — it extracts to a folder called `sales-call-intelligence` containing `SKILL.md`
+3. Move that folder to `~/.claude/skills/`
 
-**Option 2 — Manual install**
+```bash
+unzip sales-call-intelligence.skill -d ~/.claude/skills/
+```
 
-1. Copy `SKILL.md` from this repo
-2. Save it to `~/.claude/skills/sales-call-intelligence/SKILL.md`
-3. Restart Claude Code
+That's it. No restart needed. Claude Code detects new skills automatically.
+
+To confirm it installed, type `/skills` in Claude Code and look for `sales-call-intelligence` in the list.
 
 ---
 
